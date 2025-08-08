@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Twitter } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -36,25 +35,25 @@ export function Navbar() {
             
             <NavigationMenuItem>
               <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 font-poppins">
-                <Link to="/about">About</Link>
+                <Link to="/about">About Us</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
               <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 font-poppins">
-                <Link to="/services">Services</Link>
+                <Link to="/services">Market Sectors</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
               <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 font-poppins">
-                <Link to="/docs">Docs</Link>
+                <Link to="/docs">News</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem className="relative">
               <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 flex items-center gap-1 font-poppins">
-                More
+                What we do
               </NavigationMenuTrigger>
               <NavigationMenuContent className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                 <ul className="grid w-[200px] gap-2 p-4">
@@ -91,6 +90,13 @@ export function Navbar() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 font-poppins">
+                <Link to="/docs">Contact Us</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
           </NavigationMenuList>
         </NavigationMenu>
       </div>
